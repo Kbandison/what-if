@@ -1,21 +1,18 @@
-const fizzbuzz = (arr) => {
+'use strict';
 
-  let fizzArr = [];
-  // Solution code here...
-  arr.forEach((value, i) => {
+const prompt = require('prompt-sync')();
 
-    if (value % 15 === 0) {
-      fizzArr.push('Fizz Buzz');
+let value = Number(prompt('Pick a number! '));
 
-    } else if(value % 3 === 0) {
-      fizzArr.push('Fizz');
+if (value % 15 === 0) {
+  console.log('Fizz Buzz');
 
-    } else if (value % 5 === 0) {
-      fizzArr.push('Buzz');
+} else if(value % 3 === 0) {
+  console.log('Fizz');
 
-    } else {
-      fizzArr.push(value);
-    }
-  });
-  return fizzArr;
-};
+} else if (value % 5 === 0) {
+  console.log('Buzz');
+
+} else {
+  console.log('Not divisible by 3 or 5, or both!');
+}

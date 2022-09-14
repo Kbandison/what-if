@@ -2,7 +2,7 @@
 
 const prompt = require('prompt-sync')();
 
-let age = prompt('What is your age?');
+let age = Number(prompt('What is your age? '));
 
 if (age < 16){
   console.log("You can't drive.");
