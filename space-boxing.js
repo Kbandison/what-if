@@ -3,7 +3,7 @@
 const prompt = require('prompt-sync')();
 
 let earthWeight = Number(prompt('What is your Earth weight? '));
-let planet = prompt('Which planet are you going to? ');
+let planet = prompt('Which planet are you going to? Choose from the following: Venus, Mars, Jupiter, Saturn, Uranus, or Neptune. ');
 let planetWeight = 0;
 let results = true;
 
