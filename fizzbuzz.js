@@ -14,5 +14,5 @@ if (value % 15 === 0) {
   console.log('Buzz');
 
 } else {
-  console.log('Not divisible by 3 or 5, or both!!');
+  console.log('Not divisible by 3 or 5, or both!');
 }
